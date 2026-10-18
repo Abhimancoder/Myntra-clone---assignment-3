@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Myntra Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h1 class="logo">MYNTRA</h1>
+    <ul class="menu">
+  <li data-category="">All</li>
+  <li data-category="Men">Men</li>
+  <li data-category="Women">Women</li>
+  <li data-category="Kids">Kids</li>
+</ul>
+    <input id="search-box" class="search" type="text" placeholder="Search for products" />
+    <div class="icons">
+  <a href="wishlist.html">Wishlist</a>
+  &nbsp;|&nbsp;
+  <a href="orders.html">Orders</a>
+  &nbsp;|&nbsp;
+  <a href="bag.html">Bag (<span id="bag-count">0</span>)</a>
+  &nbsp;|&nbsp;
+  <a href="login.html" id="auth-link">Login</a>
+</div>
+  </nav>
+
+  <section class="banner">
+    <h2>END OF SEASON SALE</h2>
+    <p>Up to 60% off on top brands</p>
+  </section>
+
+  <h2 class="section-title">Trending Products</h2>
+  <div id="product-grid" class="grid"></div>
+    <script src="cart.js"></script>
+  <script src="auth.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

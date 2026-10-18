@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up - Myntra Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo-link"><h1 class="logo">MYNTRA</h1></a>
+  </nav>
+
+  <div class="auth-box">
+    <h2>Create Account</h2>
+    <input id="name" type="text" placeholder="Full name" />
+    <input id="email" type="email" placeholder="Email" />
+    <input id="password" type="password" placeholder="Password (min 6 characters)" />
+    <button id="signup-btn" class="btn">SIGN UP</button>
+    <p id="message" class="auth-message"></p>
+    <p>Already have an account? <a href="login.html">Log in</a></p>
+  </div>
+
+  <script>
+    document.getElementById("signup-btn").addEventListener("click", async () => {
+      const message = document.getElementById("message");
+      const body = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        password: document.getElementById("password").value,
+      };
+
+      try {
+        const response = await fetch("http://localhost:5000/api/signup", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(body),
+        });
+        const data = await response.json();
+        message.textContent = data.message;
+
+        if (response.ok) {
+          setTimeout(() => (window.location.href = "login.html"), 1200);
+        }
+      } catch (err) {
+        message.textContent = "Could not reach the server.";
+      }
+    });
+  </script>
+</body>
+</html>

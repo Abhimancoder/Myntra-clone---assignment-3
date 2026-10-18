@@ -1,0 +1,430 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  color: #ff3f6c;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-weight: bold;
+}
+
+.search {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #f5f5f6;
+}
+
+.banner {
+  background: linear-gradient(90deg, #ff3f6c, #ff905a);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.banner h2 {
+  font-size: 36px;
+}
+
+.section-title {
+  margin: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 0 30px 40px;
+}
+
+.card {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.card-img {
+  height: 220px;
+  background: #e9e9ee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+}
+
+.card-info {
+  padding: 12px;
+}
+
+.brand {
+  font-weight: bold;
+}
+
+.name {
+  color: #666;
+  margin: 4px 0;
+}
+
+.price {
+  font-weight: bold;
+}.menu li {
+  cursor: pointer;
+}
+
+.menu li:hover {
+  color: #ff3f6c;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}.card-link,
+.logo-link,
+.icons a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.icons a {
+  font-weight: bold;
+}
+
+.detail {
+  display: flex;
+  gap: 40px;
+  padding: 40px 30px;
+  flex-wrap: wrap;
+}
+
+.detail-img {
+  width: 350px;
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.detail-info h2 {
+  margin-bottom: 8px;
+}
+
+.detail-price {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 14px 40px;
+  background: #ff3f6c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.bag {
+  padding: 0 30px;
+}
+
+.bag-item {
+  display: flex;
+  gap: 20px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.bag-item img {
+  width: 100px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.qty-btn {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.qty {
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.remove-btn {
+  margin-left: 20px;
+  color: #ff3f6c;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.bag-total {
+  padding: 20px 30px 40px;
+}.auth-box {
+  max-width: 380px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.auth-box input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.auth-box a {
+  color: #ff3f6c;
+  font-weight: bold;
+}
+
+.auth-message {
+  color: #ff3f6c;
+  min-height: 20px;
+}.order-row {
+  padding: 0 30px 40px;
+}
+
+.order-box {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.order-date {
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.order-total {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 8px;
+}.card-img {
+  position: relative;
+}
+
+.heart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.heart.active {
+  color: #ff3f6c;
+}
+
+.card {
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.wish-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px 12px;
+}
+
+.btn-small {
+  padding: 8px 14px;
+  background: #ff3f6c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}/* ---------- Step 12: polish ---------- */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: white;
+}
+
+.card-img {
+  height: 280px;
+}
+
+.card {
+  height: 100%;
+}
+
+.old-price {
+  margin-left: 8px;
+  color: #999;
+  font-weight: normal;
+  text-decoration: line-through;
+  font-size: 14px;
+}
+
+.off {
+  margin-left: 6px;
+  color: #ff905a;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.tax-note {
+  color: #26a541;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.btn-outline {
+  margin-left: 12px;
+  background: white;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.btn-outline:hover {
+  border-color: #333;
+}
+
+.section-title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px 15px;
+  }
+
+  .menu {
+    order: 3;
+    width: 100%;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  .search {
+    order: 2;
+    flex: 1;
+    width: auto;
+    min-width: 140px;
+  }
+
+  .icons {
+    font-size: 13px;
+  }
+
+  .banner {
+    padding: 35px 15px;
+  }
+
+  .banner h2 {
+    font-size: 24px;
+  }
+
+  .section-title {
+    margin: 20px 15px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 0 15px 30px;
+  }
+
+  .card-img {
+    height: 200px;
+  }
+
+  .detail {
+    padding: 20px 15px;
+    gap: 20px;
+  }
+
+  .bag,
+  .order-row,
+  .bag-total {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}/* ---------- Step 13: sizes ---------- */
+
+.size-title {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.sizes {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.size-btn {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.size-btn:hover {
+  border-color: #ff3f6c;
+}
+
+.size-btn.active {
+  border-color: #ff3f6c;
+  color: #ff3f6c;
+  background: #fff0f4;
+}
+
+.size-error {
+  color: #ff3f6c;
+  min-height: 20px;
+  margin-top: 8px;
+  font-size: 14px;
+}

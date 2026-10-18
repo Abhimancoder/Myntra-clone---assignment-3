@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Orders - Myntra Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo-link"><h1 class="logo">MYNTRA</h1></a>
+    <div class="icons">
+      <a href="wishlist.html">Wishlist</a>
+      &nbsp;|&nbsp;
+      <a href="orders.html">Orders</a>
+      &nbsp;|&nbsp;
+      <a href="bag.html">Bag (<span id="bag-count">0</span>)</a>
+      &nbsp;|&nbsp;
+      <a href="login.html" id="auth-link">Login</a>
+    </div>
+  </nav>
+
+  <h2 class="section-title">My Orders</h2>
+  <div id="orders" class="bag"></div>
+
+  <script src="cart.js"></script>
+  <script src="auth.js"></script>
+  <script src="orders.js"></script>
+</body>
+</html>
