@@ -12,7 +12,7 @@ async function loadProducts(category = "", search = "") {
   if (category) params.append("category", category);
   if (search) params.append("search", search);
 
-  const response = await fetch("http://localhost:5000/api/products?" + params);
+  const response = await fetch(API_URL + "/api/products?" + params);
   productList = await response.json();
 
   grid.innerHTML = "";

@@ -20,7 +20,8 @@
     <p id="message" class="auth-message"></p>
     <p>Already have an account? <a href="login.html">Log in</a></p>
   </div>
-
+  <script src="config.js"></script>
+  
   <script>
     document.getElementById("signup-btn").addEventListener("click", async () => {
       const message = document.getElementById("message");
@@ -31,7 +32,7 @@
       };
 
       try {
-        const response = await fetch("http://localhost:5000/api/signup", {
+        const response = await fetch(API_URL + "/api/signup", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(body),

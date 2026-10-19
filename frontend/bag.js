@@ -74,14 +74,14 @@ orderBtn.addEventListener("click", async () => {
   }
 
   try {
-    const response = await fetch("http://localhost:5000/api/orders", {
+    const response = await fetch(API_URL + "/api/orders", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Bearer " + token,
       },
       body: JSON.stringify({
-        items: cart.map((i) => ({ _id: i._id, qty: i.qty, size: i.size })),
+items: cart.map((i) => ({ _id: i._id, qty: i.qty, size: i.size })),
       }),
     });
 

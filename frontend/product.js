@@ -7,7 +7,7 @@ let selectedSize = null;
 
 async function loadProduct() {
   try {
-    const response = await fetch("http://localhost:5000/api/products/" + id);
+    const response = await fetch(API_URL + "/api/products/" + id);
 
     if (!response.ok) {
       box.innerHTML = "<p>Product not found. It may have been removed.</p>";
