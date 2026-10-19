@@ -1,0 +1,7 @@
+# The Netlify site's "Base directory" setting is "fronted", but the static site
+# lives in "../frontend". This file lets builds succeed with that setting by
+# publishing the real frontend folder. If the Base directory is changed to
+# "frontend" in the Netlify UI, this folder can be deleted.
+[build]
+  publish = "../frontend"
+  command = ""
